@@ -1,0 +1,14 @@
+{
+  "id": {
+    "S": "deepracerdfw001"
+  },
+  "team_name": {
+    "S": "DMAP"
+  },
+  "max_hours_per_day": {
+    "N": "4"
+  },
+  "max_hours_per_month": {
+    "N": "80"
+  }
+}

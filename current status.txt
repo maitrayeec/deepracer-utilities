@@ -1,0 +1,5 @@
+1) deepracer-data-collection.py - needs to run in all accounts(in ec2) - currently deployed in sandbox-1 . docker image is deployed in ecr in sandbox-1. This will write model and trg job details in s3 bucket. 
+deepracer-reporting docker image will be published to individual ecr
+2) to do -  share s3 buckets across all the sandboxes
+3) deepracer-report-generation.py - This will run athena query on above s3 bucket . This can run in only one sandbox
+4) deepracer-report-notification.py - This can be scheduled from one sandbox after #3 is executed. To do - complete this to read all the s3 folders and generate a consolidated report. Current function runs athena query and sends email - which will not work properly if athena query is taking time  

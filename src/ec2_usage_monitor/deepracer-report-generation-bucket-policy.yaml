@@ -1,0 +1,27 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Principal": {
+            "AWS": [
+               "739731981269",
+               "618823940061",
+               "585335395122",
+               "655305561957",
+               "747346158019",
+               "941821586685",
+               "174862542728"
+               ]
+            },
+            "Action": [
+                "s3:GetObject",
+                "s3:PutObject",
+                "s3:PutObjectAcl"
+            ],
+            "Resource": [
+                "arn:aws:s3:::dallas-deepracer-reporting/*"
+            ]
+        }
+    ]
+}
